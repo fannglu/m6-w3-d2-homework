@@ -8,38 +8,54 @@ import {
 } from "react-router-dom";
 import "./App.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
-import Netflix from "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg";
-import HBO from "https://upload.wikimedia.org/wikipedia/commons/1/17/HBO_Max_Logo.svg";
-import Hulu from "https://upload.wikimedia.org/wikipedia/commons/e/e4/Hulu_Logo.svg";
-import Prime from "https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png";
+// import Netflix from "https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg";
+// import HBO from "https://upload.wikimedia.org/wikipedia/commons/1/17/HBO_Max_Logo.svg";
+// import Hulu from "https://upload.wikimedia.org/wikipedia/commons/e/e4/Hulu_Logo.svg";
+// import Prime from "https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png";
 
 
 
 export default function App() {
   //Insert router, links here
   return (
-    <>
+    <div>
       <h1>Test</h1>
       <Router>
         <h2>TV APPS</h2>
         <Link to="/netflix">
-          <img src={Netflix} alt="Netflix" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/69/Netflix_logo.svg"
+            alt="Netflix"
+            className="nf"
+          />
         </Link>
         <Link to="/hbo">
-          <img src={HBO} alt="HBO" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/17/HBO_Max_Logo.svg"
+            alt="HBO Max"
+            className="hb"
+          />
         </Link>
         <Link to="/hulu">
-          <img src={Hulu} alt="Hulu" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Hulu_Logo.svg"
+            alt="Hulu"
+            className="hu"
+          />
         </Link>
         <Link to="/prime">
-          <img src={Prime} alt="Prime" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png"
+            alt="Prime Video"
+            className="pr"
+          />
         </Link>
 
         <Routes>
           <Route exact path="/:id" element={<Child />} />
         </Routes>
       </Router>
-    </>
+    </div>
   );
 };
 

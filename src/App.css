@@ -1,21 +1,23 @@
-/* img {
+img {
   width: 175px;
   float:left;
   margin-left: 40px;
+  border: 1px solid black;
+  height: 83px;
 }
 img.nf {
   border: none;
 }
 img.hb {
   height: 80px;
-  padding: 10px 10px;
+  padding: 1px 10px;
 }
 img.hu {
-  height: 80px;
+  height: 63px;
   padding: 10px 10px;
 }
 img.pr {
-  height: 80px;
+  height: 85vpx;
 }
 div h3 {
   width: 350px;
@@ -29,4 +31,4 @@ div h3 span {
   color:rgb(28, 59, 85);
   font-weight: bold;
   margin-left: 10px;
-} */
+}
